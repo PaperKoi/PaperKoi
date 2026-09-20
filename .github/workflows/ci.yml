@@ -28,7 +28,7 @@ jobs:
       - name: 生成贪吃蛇动画 SVG 文件
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: Oppenheymu
+          github_user_name: PaperKoi
           # color_dots 共 5 个颜色，依次对应：0 次贡献、以及从低到高的 4 个贡献档位。
           # 这里把最低的可视档整体加深/提亮，避免某天贡献爆量后其余格子显得过于暗淡。
           outputs: |
@@ -43,7 +43,7 @@ jobs:
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: Oppenheymu
+          USERNAME: PaperKoi
           SETTING_JSON: .github/assets/profile-3d-contrib.json
 
       # 第三步：将生成的 3D 资源合并移动到 dist 目录中，便于统一发布
